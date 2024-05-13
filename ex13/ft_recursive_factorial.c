@@ -6,11 +6,12 @@
 /*   By: inazaria <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/15 19:43:47 by inazaria          #+#    #+#             */
-/*   Updated: 2024/02/19 15:41:50 by inazaria         ###   ########.fr       */
+/*   Updated: 2024/05/13 16:30:39 by inazaria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <stdio.h>
+#include <limits.h>
 
 int	ft_recursive_factorial(int nb)
 {
@@ -18,6 +19,8 @@ int	ft_recursive_factorial(int nb)
 		return (0);
 	if (nb == 1 || nb == 0)
 		return (1);
+	if (nb > 12)
+		return (0);
 	return (nb * ft_recursive_factorial(nb - 1));
 }
 /*

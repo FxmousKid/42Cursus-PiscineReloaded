@@ -6,7 +6,7 @@
 /*   By: inazaria <inazaria@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/05/13 15:27:00 by inazaria          #+#    #+#             */
-/*   Updated: 2024/05/13 15:37:20 by inazaria         ###   ########.fr       */
+/*   Updated: 2024/05/13 17:00:58 by inazaria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,7 +27,10 @@ void	display(char *filename)
 
 	file = open(filename, O_RDONLY);
 	if (file < 0)
+	{
+		ft_error("Cannot read file.\n");
 		return ;
+	}
 	read_status = read(file, &character, 1);
 	if (read_status < 0)
 	{

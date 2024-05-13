@@ -6,7 +6,7 @@
 /*   By: inazaria <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 17:14:30 by inazaria          #+#    #+#             */
-/*   Updated: 2024/05/13 16:14:23 by inazaria         ###   ########.fr       */
+/*   Updated: 2024/05/13 16:48:35 by inazaria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	display_args(char **argv)
 			ft_putchar(argv[index_arg][index_in_arg]);
 			index_in_arg++;
 		}
-		ft_putchar('n');
+		ft_putchar('\n');
 		index_arg++;
 		index_in_arg = 0;
 	}
