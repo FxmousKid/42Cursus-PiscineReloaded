@@ -6,17 +6,14 @@
 /*   By: inazaria <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/22 11:16:10 by inazaria          #+#    #+#             */
-/*   Updated: 2024/05/13 16:00:25 by inazaria         ###   ########.fr       */
+/*   Updated: 2024/05/13 16:14:38 by inazaria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 #include <stdio.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	display_args(char **argv)
 {

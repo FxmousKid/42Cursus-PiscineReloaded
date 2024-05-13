@@ -6,16 +6,13 @@
 /*   By: inazaria <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 19:17:57 by inazaria          #+#    #+#             */
-/*   Updated: 2024/05/13 15:51:58 by inazaria         ###   ########.fr       */
+/*   Updated: 2024/05/13 16:13:07 by inazaria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
-void	ft_putchar(char c)
-{
-	write(1, &c, 1);
-}
+void	ft_putchar(char c);
 
 void	ft_print_alphabet(void)
 {
