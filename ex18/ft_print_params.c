@@ -6,11 +6,16 @@
 /*   By: inazaria <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/21 17:14:30 by inazaria          #+#    #+#             */
-/*   Updated: 2024/02/21 17:14:31 by inazaria         ###   ########.fr       */
+/*   Updated: 2024/05/13 15:59:43 by inazaria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	display_args(char **argv)
 {
@@ -23,10 +28,10 @@ void	display_args(char **argv)
 	{
 		while (argv[index_arg][index_in_arg])
 		{
-			write(1, &argv[index_arg][index_in_arg], 1);
+			ft_putchar(argv[index_arg][index_in_arg]);
 			index_in_arg++;
 		}
-		write(1, "\n", 1);
+		ft_putchar('n');
 		index_arg++;
 		index_in_arg = 0;
 	}

@@ -6,20 +6,25 @@
 /*   By: inazaria <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/07 22:45:11 by inazaria          #+#    #+#             */
-/*   Updated: 2024/02/07 22:51:46 by inazaria         ###   ########.fr       */
+/*   Updated: 2024/05/13 15:54:47 by inazaria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
 
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
+
 void	ft_is_negative(int n)
 {
 	if (n >= 0)
 	{
-		write(1, "P", 1);
+		ft_putchar('P');
 	}
 	else
 	{
-		write(1, "N", 1);
+		ft_putchar('N');
 	}
 }

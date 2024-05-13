@@ -3,14 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_numbers.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: inazaria <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: inazaria <inazaria@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/02/07 22:32:33 by inazaria          #+#    #+#             */
-/*   Updated: 2024/02/07 22:43:13 by inazaria         ###   ########.fr       */
+/*   Created: 2024/05/13 15:50:29 by inazaria          #+#    #+#             */
+/*   Updated: 2024/05/13 15:53:56 by inazaria         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include <unistd.h>
+
+void	ft_putchar(char c)
+{
+	write(1, &c, 1);
+}
 
 void	ft_print_numbers(void)
 {
@@ -19,7 +24,7 @@ void	ft_print_numbers(void)
 	counter = '0';
 	while (counter <= 57)
 	{
-		write(1, &counter, 1);
+		ft_putchar(counter);
 		counter++;
 	}
 }
